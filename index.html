@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellen Formulieren</title>
+</head>
+<body>
+
+    <h1>Bestel Jouw Boek</h1>
+        <form action="pad/naar/phpbestand.php" method="GET">
+            <p>Voornaam: <br><input type="text" name="vnaam"></p>
+            <p>Naam: <br><input type="text" name="naam"></p>
+            <p>Het Adres/Straatnaam: <br><input type="text" name="adres"></p>
+            <p>Huisnummer: <br><input type="number" name="nm"></p>
+            <p>Postcode:<br><input type="text" name="postcode"></p>
+            <p>Land: <br>
+                <select name="land" required>
+                    <option value="">Selecteer een land</option>
+                    <option value="1">Belgie</option>
+                    <option value="2">NL</option>
+                    <option value="3">IT</option>
+                    <option value="4">Frankrijk</option>
+                    <option value="5">DE</option>
+                    <option value="6">ES</option>
+                </select>
+            </p>
+            
+            <p>Boek Naam: <br>
+                <select name="boek naam" required>
+                    <option value="">Selecteer jouw boek</option>
+                    <option value="da_vinci_code">De Da Vinci Code - Dan Brown</option>
+                    <option value="het_verloren_symbool">Het Verloren Symbool - Dan Brown</option>
+                    <option value="inferno">Inferno - Dan Brown</option>
+                    <option value="harry_potter">Harry Potter en de Steen der Wijzen- J.K. Rowling</option>
+                    <option value="harry_potter">Harry Potter en de Geheime Kamer- J.K. Rowling</option>
+                    <option value="harry_potter">Harry Potter en de Gevangene van Azkaban- J.K. Rowling</option>
+                    <option value="de_hobbit">De Hobbit - J.R.R. Tolkien</option>
+                    <option value="het_achterhuis">Het Achterhuis - Anne Frank</option>
+                    <option value="hamlet">Hamlet-William Shakespeare</option>
+
+                </select>
+            </p>
+
+            <p>Leveringmethode:<br>
+                <input type="radio" name="keuze" value="post1">DHL
+                <input type="radio" name="keuze" value="post2">De POST
+                <input type="radio" name="keuze" value="post3">Post NL
+                <input type="radio" name="keuze" value="post4">Be Post
+            </p>
+
+            <p><input type="checkbox" name="terms_en_conditions">Ik ga akkord met de voorwaarden!</p>
+            <p><input type="submit" value="Gegevens opslaan" name="slaan"></p>
+
+        </form>
+
+</body>
+</html>
